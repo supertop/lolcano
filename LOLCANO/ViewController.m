@@ -40,7 +40,7 @@
 	[UIView animateWithDuration:0.4 delay:0.0 usingSpringWithDamping:0.75 initialSpringVelocity:self.slider.value options:UIViewAnimationOptionBeginFromCurrentState|UIViewAnimationOptionAllowUserInteraction animations:^{
 		self.imageView.transform = CGAffineTransformMakeTranslation(touch.x, touch.y);
 	} completion:^(BOOL finished) {
-		NSLog(@"WHO'S LAUGHING NOW?");
+
 	}];
 }
 
