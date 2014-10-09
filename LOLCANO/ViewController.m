@@ -24,6 +24,7 @@
 	
 	UIImage *lolcano = [UIImage imageNamed:@"Lolcano"];
 	self.imageView = [[UIImageView alloc] initWithImage:lolcano];
+	self.imageView.center = CGPointZero;
 	[self.view addSubview:self.imageView];
 	
 	[self updateLabel];
@@ -35,8 +36,9 @@
 }
 
 - (IBAction)didTap:(UITapGestureRecognizer *)sender {
-	[UIView animateWithDuration:0.40 delay:0.0 usingSpringWithDamping:0.75 initialSpringVelocity:self.slider.value options:UIViewAnimationOptionBeginFromCurrentState animations:^{
-		self.imageView.center = [sender locationInView:self.view];
+	CGPoint touch = [sender locationInView:self.view];
+	[UIView animateWithDuration:0.4 delay:0.0 usingSpringWithDamping:0.75 initialSpringVelocity:self.slider.value options:UIViewAnimationOptionBeginFromCurrentState|UIViewAnimationOptionAllowUserInteraction animations:^{
+		self.imageView.transform = CGAffineTransformMakeTranslation(touch.x, touch.y);
 	} completion:^(BOOL finished) {
 		NSLog(@"WHO'S LAUGHING NOW?");
 	}];
