@@ -1,6 +1,6 @@
 Radar: 18603097
 
-The method [UIView animateWithDuration:delay:usingSpringWithDamping:initialSpringVelocity:options:animations:completion:] can fail while animating a UIImageView with certain ranges of input values. 
+The method ```[UIView animateWithDuration:delay:usingSpringWithDamping:initialSpringVelocity:options:animations:completion:]``` can fail while animating a UIImageView with certain ranges of input values. 
 
 The UIImageView being transformed in the animations block disappears, and occasionally other unrelated UI elements flicker for a while. 
 
