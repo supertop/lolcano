@@ -20,7 +20,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="h77-Ud-rY6">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="7.2999999999999998" minValue="5" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="lQM-FJ-ftj">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="7.2999999999999998" minValue="7" maxValue="8" translatesAutoresizingMaskIntoConstraints="NO" id="lQM-FJ-ftj">
                                 <rect key="frame" x="14" y="550" width="572" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Y0a-X7-qnw"/>
